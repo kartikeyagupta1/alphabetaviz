@@ -2,7 +2,19 @@
 <html>
 <head>
   <title>AB - Data Visualisation</title>
-  
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Amit Kapoor" />
+  <meta name="description" content="IXD 2020 Projects" />
+  <meta property="og:title" content="IXD 2020 Project" />
+  <meta property="og:description" content="Brief description" />
+  <meta property="og:image" content="/some-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image:alt" content="image description" />
+
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.18.2"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body class="heading">
@@ -12,7 +24,7 @@
   <h1>The Alpha-Beta of stock market</h1>
   <p>As beginners, how can we make informed decisions in selecting stocks for investments?</p>
 </div>
-<div style="margin-top: 5%;"">
+<div style="margin-top: 5%;">
     <h2>What is the stock market?</h2>
     <p>The stock market broadly refers to the collection of exchanges and other venues where the buying, selling, and issuance of shares of publicly held companies take place. Such financial activities are conducted through institutionalized formal exchanges (whether physical or electronic) or via over-the-counter (OTC) marketplaces that operate under a defined set of regulations.</p>
 </div>
@@ -28,5 +40,7 @@
     <div class="card"><strong>Alpha</strong><br/>Estimations of returns a particular stock may give comapred to the market.</div>
   </div>
 </div>
+<div id="ABvis"></div>
+<script src="scatter1.js"></script>
 </body>
 </html>

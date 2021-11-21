@@ -1,0 +1,634 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+      "values": [
+          {
+              "sr no": 1,
+              "company": "Reliance Industries Ltd",
+              "sector": "Power, Oil & Gas",
+              "market_cap": "16,47,964.09",
+              "close": 2473.3,
+              "beta": 1.14,
+              "alpha": 14.9,
+              "pe": 33.54
+          },
+          {
+              "sr no": 2,
+              "company": "Tata Consultancy Services Ltd",
+              "sector": "IT Services & Consulting",
+              "market_cap": "12,85,679.29",
+              "close": 3475.7,
+              "beta": 0.63,
+              "alpha": 13.71,
+              "pe": 39.64
+          },
+          {
+              "sr no": 3,
+              "company": "HDFC Bank Ltd",
+              "sector": "Finance and Insurance",
+              "market_cap": "8,52,892.49",
+              "close": 1539.4,
+              "beta": 1.1,
+              "alpha": -4.95,
+              "pe": 26.79
+          },
+          {
+              "sr no": 4,
+              "company": "Infosys Ltd",
+              "sector": "IT Services & Consulting",
+              "market_cap": "7,45,692.88",
+              "close": 1779.4,
+              "beta": 0.61,
+              "alpha": 25.13,
+              "pe": 38.54
+          },
+          {
+              "sr no": 5,
+              "company": "Hindustan Unilever Ltd",
+              "sector": "FMCG and Consumer Goods",
+              "market_cap": "5,63,760.93",
+              "close": 2399.4,
+              "beta": 0.24,
+              "alpha": 6.54,
+              "pe": 70.51
+          },
+          {
+              "sr no": 6,
+              "company": "ICICI Bank Ltd",
+              "sector": "Finance and Insurance",
+              "market_cap": "5,29,414.25",
+              "close": 762.9,
+              "beta": 1.32,
+              "alpha": 1.92,
+              "pe": 28.8
+          },
+          {
+              "sr no": 7,
+              "company": "Housing Development Finance Corporation Ltd",
+              "sector": "Finance and Insurance",
+              "market_cap": "5,29,337.23",
+              "close": 2925.4,
+              "beta": 1.15,
+              "alpha": -6.79,
+              "pe": 28.25
+          },
+          {
+              "sr no": 8,
+              "company": "Bharti Airtel Ltd",
+              "sector": "Telecom Services",
+              "market_cap": "4,62,483.67",
+              "close": 714.35,
+              "beta": 0.77,
+              "alpha": 20.52,
+              "pe": -30.66
+          },
+          {
+              "sr no": 9,
+              "company": "Bajaj Finance Ltd",
+              "sector": "Finance and Insurance",
+              "market_cap": "4,51,003.36",
+              "close": 7484.95,
+              "beta": 1.82,
+              "alpha": 16.19,
+              "pe": 102.04
+          },
+          {
+              "sr no": 10,
+              "company": "State Bank of India",
+              "sector": "Finance and Insurance",
+              "market_cap": "4,49,621.93",
+              "close": 503.8,
+              "beta": 1.48,
+              "alpha": -2.06,
+              "pe": 20.07
+          },
+          {
+              "sr no": 11,
+              "company": "Kotak Mahindra Bank Ltd",
+              "sector": "Finance and Insurance",
+              "market_cap": "4,01,950.87",
+              "close": 2024.45,
+              "beta": 1,
+              "alpha": 1.42,
+              "pe": 40.23
+          },
+          {
+              "sr no": 12,
+              "company": "Wipro Ltd",
+              "sector": "IT Services & Consulting",
+              "market_cap": "3,55,914.08",
+              "close": 651.45,
+              "beta": 0.35,
+              "alpha": 23.2,
+              "pe": 32.97
+          },
+          {
+              "sr no": 13,
+              "company": "Asian Paints Ltd",
+              "sector": "FMCG and Consumer Goods",
+              "market_cap": "3,09,446.70",
+              "close": 3226.85,
+              "beta": 0.57,
+              "alpha": 23.19,
+              "pe": 98.57
+          },
+          {
+              "sr no": 14,
+              "company": "HCL Technologies Ltd",
+              "sector": "IT Services & Consulting",
+              "market_cap": "3,03,984.76",
+              "close": 1120.2,
+              "beta": 0.84,
+              "alpha": 14.46,
+              "pe": 27.28
+          },
+          {
+              "sr no": 15,
+              "company": "ITC Ltd",
+              "sector": "FMCG and Consumer Goods",
+              "market_cap": "2,92,656.48",
+              "close": 237.5,
+              "beta": 0.73,
+              "alpha": -11.24,
+              "pe": 22.24
+          },
+          {
+              "sr no": 16,
+              "company": "Bajaj Finserv Ltd",
+              "sector": "Finance and Insurance",
+              "market_cap": "2,84,817.39",
+              "close": 17921.25,
+              "beta": 1.75,
+              "alpha": 20.24,
+              "pe": 63.71
+          },
+          {
+              "sr no": 17,
+              "company": "Larsen & Toubro Ltd",
+              "sector": "Construction & Engineering",
+              "market_cap": "2,66,498.01",
+              "close": 1897,
+              "beta": 1.15,
+              "alpha": -5.4,
+              "pe": 23.01
+          },
+          {
+              "sr no": 18,
+              "company": "Maruti Suzuki India Ltd",
+              "sector": "Automobile",
+              "market_cap": "2,45,202.92",
+              "close": 8117.15,
+              "beta": 1.15,
+              "alpha": -14.67,
+              "pe": 55.87
+          },
+          {
+              "sr no": 19,
+              "company": "UltraTech Cement Ltd",
+              "sector": "Construction & Engineering",
+              "market_cap": "2,24,079.28",
+              "close": 7767.7,
+              "beta": 0.89,
+              "alpha": 9.91,
+              "pe": 41.02
+          },
+          {
+              "sr no": 20,
+              "company": "Titan Company Ltd",
+              "sector": "FMCG and Consumer Goods",
+              "market_cap": "2,20,011.17",
+              "close": 2478.2,
+              "beta": 0.9,
+              "alpha": 15.07,
+              "pe": 226.12
+          },
+          {
+              "sr no": 21,
+              "company": "Axis Bank Ltd",
+              "sector": "Finance and Insurance",
+              "market_cap": "2,16,648.60",
+              "close": 706.35,
+              "beta": 1.49,
+              "alpha": -19.05,
+              "pe": 30.11
+          },
+          {
+              "sr no": 22,
+              "company": "Oil and Natural Gas Corporation Ltd",
+              "sector": "Power, Oil & Gas",
+              "market_cap": "1,94,113.71",
+              "close": 154.3,
+              "beta": 1.21,
+              "alpha": -10.26,
+              "pe": 11.95
+          },
+          {
+              "sr no": 23,
+              "company": "Sun Pharmaceutical Industries Ltd",
+              "sector": "Pharmaceuticals and Healthcare",
+              "market_cap": "1,89,703.42",
+              "close": 790.65,
+              "beta": 0.66,
+              "alpha": 8.57,
+              "pe": 65.33
+          },
+          {
+              "sr no": 24,
+              "company": "Nestle India Ltd",
+              "sector": "FMCG and Consumer Goods",
+              "market_cap": "1,87,099.52",
+              "close": 19405.5,
+              "beta": 0.24,
+              "alpha": 13.93,
+              "pe": 89.85
+          },
+          {
+              "sr no": 25,
+              "company": "Tata Motors Ltd",
+              "sector": "Automobile",
+              "market_cap": "1,83,880.97",
+              "close": 509.7,
+              "beta": 1.73,
+              "alpha": 17.77,
+              "pe": -13.67
+          },
+          {
+              "sr no": 26,
+              "company": "JSW Steel Ltd",
+              "sector": "Construction & Engineering",
+              "market_cap": "1,56,667.25",
+              "close": 650.55,
+              "beta": 1.09,
+              "alpha": 7.43,
+              "pe": 19.8
+          },
+          {
+              "sr no": 27,
+              "company": "Tech Mahindra Ltd",
+              "sector": "IT Services & Consulting",
+              "market_cap": "1,52,084.25",
+              "close": 1567.75,
+              "beta": 0.67,
+              "alpha": 19.45,
+              "pe": 34.35
+          },
+          {
+              "sr no": 28,
+              "company": "Adani Ports and Special Economic Zone Ltd",
+              "sector": "Construction & Engineering",
+              "market_cap": "1,48,241.39",
+              "close": 726.05,
+              "beta": 1.27,
+              "alpha": 11.08,
+              "pe": 29.68
+          },
+          {
+              "sr no": 29,
+              "company": "Tata Steel Ltd",
+              "sector": "Construction & Engineering",
+              "market_cap": "1,42,842.90",
+              "close": 1186.6,
+              "beta": 1.28,
+              "alpha": 11.21,
+              "pe": 19.07
+          },
+          {
+              "sr no": 30,
+              "company": "HDFC Life Insurance Company Ltd",
+              "sector": "Finance and Insurance",
+              "market_cap": "1,42,619.15",
+              "close": 704.5,
+              "beta": 0.86,
+              "alpha": 8.8,
+              "pe": 104.8
+          },
+          {
+              "sr no": 31,
+              "company": "Power Grid Corporation of India Ltd",
+              "sector": "Power, Oil & Gas",
+              "market_cap": "1,34,277.47",
+              "close": 192.5,
+              "beta": 0.53,
+              "alpha": 3.07,
+              "pe": 11.16
+          },
+          {
+              "sr no": 32,
+              "company": "NTPC Ltd",
+              "sector": "Power, Oil & Gas",
+              "market_cap": "1,31,195.89",
+              "close": 135.3,
+              "beta": 0.72,
+              "alpha": -6.81,
+              "pe": 8.96
+          },
+          {
+              "sr no": 33,
+              "company": "Divi's Laboratories Ltd",
+              "sector": "Pharmaceuticals and Healthcare",
+              "market_cap": "1,27,042.64",
+              "close": 4785.6,
+              "beta": 0.28,
+              "alpha": 30.44,
+              "pe": 64.02
+          },
+          {
+              "sr no": 34,
+              "company": "Indian Oil Corporation Ltd",
+              "sector": "Power, Oil & Gas",
+              "market_cap": "1,21,772.15",
+              "close": 129.35,
+              "beta": 0.86,
+              "alpha": -12.99,
+              "pe": 5.63
+          },
+          {
+              "sr no": 35,
+              "company": "SBI Life Insurance Company Ltd",
+              "sector": "Finance and Insurance",
+              "market_cap": "1,18,230.21",
+              "close": 1182.05,
+              "beta": 0.85,
+              "alpha": 14.1,
+              "pe": 81.21
+          },
+          {
+              "sr no": 36,
+              "company": "Grasim Industries Ltd",
+              "sector": "Construction & Engineering",
+              "market_cap": "1,16,503.29",
+              "close": 1774.5,
+              "beta": 0.89,
+              "alpha": 11.09,
+              "pe": 27.06
+          },
+          {
+              "sr no": 37,
+              "company": "Mahindra and Mahindra Ltd",
+              "sector": "Automobile",
+              "market_cap": "1,10,299.97",
+              "close": 923.7,
+              "beta": 1.47,
+              "alpha": -12.45,
+              "pe": 60.86
+          },
+          {
+              "sr no": 38,
+              "company": "Bajaj Auto Ltd",
+              "sector": "Automobile",
+              "market_cap": "1,02,654.40",
+              "close": 3547.55,
+              "beta": 0.95,
+              "alpha": -1.75,
+              "pe": 21.14
+          },
+          {
+              "sr no": 39,
+              "company": "Hindalco Industries Ltd",
+              "sector": "Construction & Engineering",
+              "market_cap": 98654.54,
+              "close": 440.3,
+              "beta": 1.65,
+              "alpha": 4.71,
+              "pe": 28.32
+          },
+          {
+              "sr no": 40,
+              "company": "Shree Cement Ltd",
+              "sector": "Construction & Engineering",
+              "market_cap": 98021.65,
+              "close": 27167.3,
+              "beta": 0.9,
+              "alpha": 4.85,
+              "pe": 42.88
+          },
+          {
+              "sr no": 41,
+              "company": "Coal India Ltd",
+              "sector": "Power, Oil & Gas",
+              "market_cap": 94536.25,
+              "close": 153.4,
+              "beta": 0.79,
+              "alpha": -28.86,
+              "pe": 7.44
+          },
+          {
+              "sr no": 42,
+              "company": "Bharat Petroleum Corporation Ltd",
+              "sector": "Power, Oil & Gas",
+              "market_cap": 87642.71,
+              "close": 405.3,
+              "beta": 1.22,
+              "alpha": 0.04,
+              "pe": 5.42
+          },
+          {
+              "sr no": 43,
+              "company": "Britannia Industries Ltd",
+              "sector": "FMCG and Consumer Goods",
+              "market_cap": 86028.52,
+              "close": 3571.6,
+              "beta": 0.61,
+              "alpha": -3.11,
+              "pe": 46.16
+          },
+          {
+              "sr no": 44,
+              "company": "Indusind Bank Ltd",
+              "sector": "Finance and Insurance",
+              "market_cap": 78070.3,
+              "close": 1008.45,
+              "beta": 2.29,
+              "alpha": -39.05,
+              "pe": 26.64
+          },
+          {
+              "sr no": 45,
+              "company": "Dr Reddy's Laboratories Ltd",
+              "sector": "Pharmaceuticals and Healthcare",
+              "market_cap": 77505.97,
+              "close": 4671.45,
+              "beta": 0.16,
+              "alpha": 16.02,
+              "pe": 39.71
+          },
+          {
+              "sr no": 46,
+              "company": "Tata Consumer Products Ltd",
+              "sector": "FMCG and Consumer Goods",
+              "market_cap": 76677.71,
+              "close": 832.05,
+              "beta": 0.75,
+              "alpha": 34.37,
+              "pe": 89.5
+          },
+          {
+              "sr no": 47,
+              "company": "Cipla Ltd",
+              "sector": "Pharmaceuticals and Healthcare",
+              "market_cap": 71980.35,
+              "close": 892.3,
+              "beta": 0.36,
+              "alpha": 13.23,
+              "pe": 29.93
+          },
+          {
+              "sr no": 48,
+              "company": "Eicher Motors Ltd",
+              "sector": "Automobile",
+              "market_cap": 71177.09,
+              "close": 2603.3,
+              "beta": 0.98,
+              "alpha": -12.04,
+              "pe": 52.85
+          },
+          {
+              "sr no": 49,
+              "company": "UPL Ltd",
+              "sector": "Fertilizers & Agro Chemicals",
+              "market_cap": 56650.15,
+              "close": 741.45,
+              "beta": 1.07,
+              "alpha": -1.75,
+              "pe": 19.73
+          },
+          {
+              "sr no": 50,
+              "company": "Hero MotoCorp Ltd",
+              "sector": "Automobile",
+              "market_cap": 53644.71,
+              "close": 2684.85,
+              "beta": 0.92,
+              "alpha": -16.72,
+              "pe": 18.39
+          }
+      ]
+  },
+  "width": 600,
+  "height": 600,
+  "layer": [
+      {
+         
+          "title": "What suits you best ? ",
+          "mark": {
+              "type": "circle",
+              "tooltip": true
+          },
+          "encoding": {
+              "x": {
+                  "field": "alpha",
+                  "type": "quantitative",
+                  "axis": null
+              },
+              "y": {
+                  "field": "beta",
+                  "type": "quantitative",
+                  "axis": null
+              },
+              "size": {
+                  "field": "pe",
+                  "type": "Q",
+                  "legend": null
+              },
+              "color": {
+                  "field": "sector",
+                  "type": "nominal"
+              },
+              "tooltip": [
+                  {
+                      "field": "company"
+                  },
+                  {
+                      "field": "sector"
+                  },
+                  {
+                      "field": "alpha"
+                  },
+                  {
+                      "field": "beta"
+                  },
+                  {
+                      "field": "pe"
+                  }
+              ]
+          }
+      },
+      {
+          
+          "mark": {
+              "type": "rule",
+              "color": "black"
+          },
+          "encoding": {
+              "x": {
+                  "field": "alpha",
+                  "datum": {
+                      "expr": "-40"
+                  },
+                  "type": "quantitative",
+                  "axis": {
+                      "labels": true
+                  }
+              },
+              "y": {
+                  "field": "beta",
+                  "datum": {
+                      "expr": "1.0"
+                  },
+                  "type": "quantitative"
+              },
+              "x2": {
+                  "field": "alpha",
+                  "datum": {
+                      "expr": "40"
+                  }
+              },
+              "y2": {
+                  "field": "beta",
+                  "datum": {
+                      "expr": "1.0"
+                  }
+              }
+          }
+      },
+      {
+          
+          "mark": {
+              "type": "rule",
+              "color": "black"
+          },
+          "encoding": {
+              "x": {
+                  "datum": {
+                      "expr": "0"
+                  },
+                  "type": "quantitative"
+              },
+              "y": {
+                  "datum": {
+                      "expr": "0"
+                  },
+                  "type": "quantitative"
+              },
+              "x2": {
+                  "datum": {
+                      "expr": "0"
+                  }
+              },
+              "y2": {
+                  "datum": {
+                      "expr": "2.4"
+                  }
+              }
+          }
+      }
+  ],
+  "config": {
+      "view": {
+          "stroke": null
+      },
+      "axis": {
+          "grid": false
+      }
+  }
+}

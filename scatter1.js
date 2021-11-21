@@ -1,15 +1,28 @@
-vegaEmbed = require("vega-embed");
-d3 = require("d3");
-n50list =  "https://docs.google.com/spreadsheets/d/e/2PACX-1vQbBIGSwAJMsVtki4Ex90DGcOTQxhSWHkbTUTj4GazYWVueNMq_Cm4YYdYhPGiQQpdcu07jPlS3UgC1/pub?gid=2095680982&single=true&output=csv";
-vegaEmbed({
-    width:"500",
-    height:"500",
-    data: {values: n50list_data},
-    mark: {type:"circle", tooltip:true},
-    encoding: {
-      "x": {field: "alpha", type: "quantitative", orient: "top"},
-      "y": {field: "beta", type: "quantitative"},
-      size: {field: "pe", type: "Q", legend: null},
-      color: {field: "sector", type: "nominal"} //"field": "symbol", "type": "nominal"
-    },
-  })
+// const spec = {
+//   $schema: 'https://vega.github.io/schema/vega-lite/v5.json',
+//   description: 'A simple bar chart with embedded data.',
+//   data: {
+//     values: [
+//       { a: 'A', b: 28 },
+//       { a: 'B', b: 55 },
+//       { a: 'C', b: 43 },
+//       { a: 'D', b: 91 },
+//       { a: 'E', b: 81 },
+//       { a: 'F', b: 53 },
+//       { a: 'G', b: 19 },
+//       { a: 'H', b: 87 },
+//       { a: 'I', b: 52 },
+//     ],
+//   },
+//   mark: 'bar',
+//   encoding: {
+//     x: { field: 'a', type: 'ordinal' },
+//     y: { field: 'b', type: 'quantitative' },
+//   },
+// };
+
+// // The first opption the id for the div -> #vis
+// // the second option is for the spec
+// vegaEmbed('#ABvis', spec);
+
+vegaEmbed("#ABvis", 'csvjson.json')
